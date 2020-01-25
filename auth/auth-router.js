@@ -16,7 +16,7 @@ router.post('/register', (req, res, next) => {
 
   users.add(user)
     .then(saved => {
-      return res.status(201).json(saved)
+      return res.status(201).json(user = saved)
     })
     .catch(err => {
       return res.status(500).json({message: 'Failed to register user'})

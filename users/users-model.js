@@ -2,6 +2,10 @@ const bcrypt = require('bcryptjs')
 
 const db = require('../database/dbConfig.js')
 
+function list() {
+    return db('users')
+}
+
 function find() {
     return db('users').select('id', 'username')
 }
