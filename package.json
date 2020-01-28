@@ -4,8 +4,9 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "jest cross-env DB_ENV=testing --watchAll",
-    "server": "nodemon index.js"
+    "test": "jest --verbose --watch",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
